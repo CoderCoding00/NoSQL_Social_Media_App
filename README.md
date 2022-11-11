@@ -28,4 +28,4 @@ Created a walkthrough video to demonstrates the functionality, the link to the v
 
 * A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+https://watch.screencastify.com/v/L9C9SCWWFui8xF2Q74GE
