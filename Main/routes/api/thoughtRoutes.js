@@ -19,19 +19,19 @@ router
     .get(getThought)
     .post(createNewThought);
 
-// /api/thoughts/:id (used in insomnia to test the routes)
+// /api/thoughts/:id (used in insomnia to test)
 router
     .route('/:id')
     .get(getThoughtById)
     .put(updateThought)
     .delete(deleteThought);
 
-// /api/thoughts/:thoughtId/reactions (used in insomnia to test the routes)
+// /api/thoughts/:thoughtId/reactions (used in insomnia to test)
 router
     .route('/:thoughtId/reactions')
     .post(addReaction);
 
-// /api/thoughts/:thoughtId/reactions/:reactionId (used in insomnia to test the routes)
+// /api/thoughts/:thoughtId/reactions/:reactionId (used in insomnia to test)
 router
     .route('/:thoughtId/reactions/:reactionId')
     .delete(removeReaction);
