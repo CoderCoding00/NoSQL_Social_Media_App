@@ -73,15 +73,16 @@ const thoughtController = {
     },
     // * `POST` to create a reaction stored in a single thought's `reactions` array field
     addReaction({ params, body }, res) {
-        Thought.findOneAndUpdate({ _id: params.id },
+        Thought.findOneAndUpdate({ _id: params.thoughtId },
             { $push: { reactions: body } },
             { new: true, runValidators: true })
-            .then(Thought => {
-                if (!Thought) {
+            .then(data => {
+                console.log(data);
+                if (!data) {
                     res.status(404).json({ message: 'Thought not found with this id.!' });
                     return;
                 }
-                res.json(Thought);
+                res.json(data);
             })
             .catch(err => res.json(err));
     },

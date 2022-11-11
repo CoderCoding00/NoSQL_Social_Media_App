@@ -7,6 +7,8 @@ const { Schema, Types } = require('mongoose');
 // * `reactionId`  * Use Mongoose's ObjectId data type 
 //  * Default value is set to a new ObjectId
 const reactionSchema = new Schema(
+
+
     {
         reactionId: {
             type: Schema.Types.ObjectId,
@@ -27,7 +29,7 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: createdAtVal => dateFormat(createdAtVal)
+            // get: createdAtVal => dateFormat(createdAtVal)
         }
     },
     {
@@ -36,5 +38,4 @@ const reactionSchema = new Schema(
         }
     }
 );
-
 module.exports = reactionSchema;
