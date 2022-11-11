@@ -26,6 +26,6 @@ Created a walkthrough video to demonstrates the functionality, the link to the v
 
 ### Links 
 
-* A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
+A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
 
 https://watch.screencastify.com/v/L9C9SCWWFui8xF2Q74GE
